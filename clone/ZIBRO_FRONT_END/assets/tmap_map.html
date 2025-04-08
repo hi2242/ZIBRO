@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>티맵 OpenAPI</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://apis.openapi.sk.com/tmap/jsv2?version=1&appKey=baY9gHAspo9WayJfos7oH5bE9IXuvB8J4mXCLu3n"></script>
+    <style>
+        #map_div {
+            width: 750px;
+            height: 750px;
+        }
+    </style>
+</head>
+<body onload="initTmap()"> <!-- 페이지 로드 시 initTmap 호출 -->
+    <div id="map_div"></div>
+    <script>
+        function initTmap() {
+            var map = new Tmapv2.Map("map_div", { // 지도가 생성될 div
+                center: new Tmapv2.LatLng(37.57900438284952, 126.96530342102092), // 지도의 중심좌표
+                width: "100%", // 지도의 넓이
+                height: "100%", // 지도의 높이
+                zoom: 19, // 지도의 줌레벨
+                httpsMode: true // https모드 설정
+            });
+
+            // 마커 생성
+            var marker = new Tmapv2.Marker({
+                position: new Tmapv2.LatLng(37.57706573199968, 126.9749164581303), // Marker의 중심좌표 설정
+                draggable: true, // Marker의 드래그 가능 여부
+                map: map // Marker가 표시될 Map 설정
+            });
+
+            // 팝업 스타일
+            var infoWindowContent = `
+                <div class="_tmap_preview_popup_1">
+                    <div class="_tmap_preview_popup_image_s">
+                        <img src="https://tmapapi.sktelecom.com/resources/images/sample/img-skt.png" alt="">
+                    </div>
+                    <div class="_tmap_preview_popup_info">
+                        <div class="_tmap_preview_popup_title">티맵 모빌리티</div>
+                        <div class="_tmap_preview_popup_address">서울 중구 삼일대로 343 (우)04538</div>
+                        <div class="_tmap_preview_popup_address">(지번) 저동1가 114</div>
+                    </div>
+                </div>
+            `;
+
+            // Popup 객체 생성
+            var infoWindow = new Tmapv2.InfoWindow({
+                position: new Tmapv2.LatLng(37.570028, 126.986072), // Popup이 표시될 맵 좌표
+                content: infoWindowContent, // Popup 표시될 text
+                border: '0px solid #FF0000', // Popup의 테두리 border 설정
+                background: false,
+                type: 2, // Popup의 type 설정
+                map: map // Popup이 표시될 맵 객체
+            });
+        }
+    </script>
+</body>
+</html>
