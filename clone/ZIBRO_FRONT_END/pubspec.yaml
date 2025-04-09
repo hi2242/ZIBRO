@@ -49,6 +49,7 @@ dependencies:
   path_provider: ^2.0.12
   change_app_package_name: ^1.4.0
   url_launcher: ^6.1.10
+  flutter_dotenv: ^5.1.0
   
   
   
@@ -90,6 +91,7 @@ flutter:
     - assets/images/
     - assets/dot_grid.png
     - assets/blueCircle.png
+    - .env
 
   #
   # For details regarding fonts from package dependencies,
