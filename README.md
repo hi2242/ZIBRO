@@ -85,6 +85,24 @@
 
 > 동일한 동선(예: 인하대역 -> 인하대 후문)을 가진 인하대학교 학생들을 실시간으로 매칭하여 택시 합승을 유도합니다. 이를 통해 학생들은 택시 요금을 절감하여 경제적 부담을 덜고 불필요한 택시 운행 횟수를 줄여 탄소 배출 저감에 직접 기여할 수 있습니다.
 
+## 4-1. 프로젝트 기획 자료
+
+### 👥 승객 서비스 기획
+
+<img width="1600" height="900" alt="Image" src="https://github.com/user-attachments/assets/4c8a7eaa-345e-4fa1-bd5a-1efdfc8739fe" />
+
+<img width="1600" height="900" alt="Image" src="https://github.com/user-attachments/assets/58d77ba7-59c6-44cf-b88a-7e1b14697171" />
+
+<img width="1600" height="900" alt="Image" src="https://github.com/user-attachments/assets/1a848dce-d3e0-480e-b1f1-d157144e6189" />
+
+---
+
+### 🚗 운전자 서비스 기획
+
+<img width="1600" height="900" alt="Image" src="https://github.com/user-attachments/assets/7f01fd9b-ff26-400f-96bd-b5963d2693bc" />
+
+<img width="1600" height="900" alt="Image" src="https://github.com/user-attachments/assets/89206749-ee52-40b5-bc47-ef5d05507d02" />
+
 ## 5. 프로젝트 기능 소개
 
 <details>
